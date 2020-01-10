@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id" translate="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flanet Kreatif|Aplikasi|Calculator JavaScript</title>
+<meta name="description" content="Aplikasi|Calculator JavaScript|Komunitas koding yang kreatif">
+<meta name="keywords" content="insha allah bermanfaat">
+<meta name="author" content="Jejen Juanda">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="calculator.css">
+<script src="calculator.js"></script>
+</head>
+<body>
+<header role="banner" aria-label="logo">
+<div>
+<a href="http://kelompok5.cvi106.com/index.html">
+<img src="logo.jpg" alt="logo flanet kreatif">
+</a>
+</div>
+<div id="head"></div>
+</header>
+<main role="main" aria-label="menu utama">
+<p id="menu"></p>
+<section role="region" aria-label="konten">
+<div>
+<article id="konten">
+<h2 id="h0">Menampilkan Hasil Perhitungan dengan JavaScript</h2>
+<p>
+<form id="form1" name="form1" onsubmit="return false" autocomplete="on">
+<fieldset id="input1">
+<legend>Pilih Nama Dan Oprator</legend>
+<br>
+<label for="text1">Masukkan nilai pertama: </label>
+<input type="text" id="text1" onkeyup="tulis()" name="text1" title="ketik nilai">
+<label for="select">Pilih oprator: </label>
+<select id="select" onchange="pilih()" name="select" disabled="disabled">
+<option value="a" selected>Pilih</option>
+<option value="akar">Akar</option>
+<option value="bagi">Bagi</option>
+<option value="kali">Kali</option>
+<option value="kpk">KPK</option>
+<option value="kurang">Kurang</option>
+<option value="modulus">Modulus</option>
+<option value="pangkat">Pangkat</option>
+<option value="tambah">Tambah</option>
+</select>
+</fieldset>
+<label for="text2">Masukkan nilai ke dua: </label>
+<input type="text" id="text2" onkeyup="cek()" name="text2" title="ketik nilai" disabled="disabled">
+<fieldset id='input2'>
+<legend>Silahkan Klik hitung untuk mengetahui hasil-nya, atau klik reset untuk mengulangi pengisian form</legend>
+<input type="submit" id="hitung" value="hitung" onclick="tampilkan()" disabled="disabled">
+<input type="reset" id="reset" onclick="back()" disabled="disabled">
+</fieldset>
+</form>
+</p>
+</article>
+</div>
+<aside>
+<article>
+<h2>Website Flanet Kreatif</h1>
+<p>
+Kreatif mengekspresikan logika didalam coding
+</p>
+<figure>
+<img src="logo.jpg" alt="logo flanet kreatif">
+<figcaption>Logo</figcaption>
+</figure>
+</article>
+</aside>
+</section>
+<footer role="contentinfo" aria-label="footer">
+<p>
+design by Kelompok 5
+</p>
+<nav>
+<a href='#konten'>kembali ke atas</a>
+<a href='index.html'>Halaman Utama</a>
+</nav>
+<p>
+copyright 2020 flanet kreatif. All rights reserved.
+</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
